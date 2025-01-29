@@ -1,0 +1,35 @@
+.progress-container {
+  width: 100%;
+  height: 16px;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 8px;
+  background-color: #ffc107; // Yellow for partial completion
+}
+
+.progress-bar[data-progress="2"] {
+  background-color: #4caf50; // Green for complete
+}
+
+/* Grid Styling for Books */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+label {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
